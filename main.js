@@ -11,10 +11,14 @@ form.addEventListener("submit", (event) => {
   const listItem = document.createElement("li");
   listItem.textContent = item;
 
+  const span = document.createElement("span");
+  span.style = "padding-left: 50px;";
+
   const purchasedButton = document.createElement("button");
   purchasedButton.textContent = "Mark Purchased";
   purchasedButton.classList.add("form-button");
 
+  listItem.appendChild(span);
   listItem.appendChild(purchasedButton);
   list.appendChild(listItem);
 
